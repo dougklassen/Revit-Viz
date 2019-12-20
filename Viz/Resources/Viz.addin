@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RevitAddIns>
+
+  <AddIn Type="Application">
+    <Name>Viz</Name>
+    <Assembly>C:\ProgramData\AutoDesk\Revit\AddIns\2020\Viz\Viz.dll</Assembly>
+    <AddInId>46648190-c9ec-4bbc-b4c6-89d4cebdbb79</AddInId>
+    <FullClassName>DougKlassen.Revit.Viz.StartUpApp</FullClassName>
+    <VendorId>TSRA</VendorId>
+    <VendorDescription>Doug Klassen</VendorDescription>
+  </AddIn>
+</RevitAddIns>
