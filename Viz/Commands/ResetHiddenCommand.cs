@@ -5,10 +5,10 @@ using System.Linq;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
 
-namespace Viz.Commands
+namespace DougKlassen.Revit.Viz.Commands
 {
     [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
-    public class NewCommand : IExternalCommand
+    public class ResetHiddenCommand : IExternalCommand
     {
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {

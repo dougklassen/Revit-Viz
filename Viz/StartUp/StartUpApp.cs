@@ -30,15 +30,27 @@ namespace DougKlassen.Revit.Viz
             BitmapImage largeIcon = GetEmbeddedImageResource("iconLarge.png");
             BitmapImage smallIcon = GetEmbeddedImageResource("iconSmall.png");
 
-            PushButtonData newCommandPushButtonData = new PushButtonData(
-                 "NewCommandButton", //name of the button
-                 "NewCommand", //text on the button
+            PushButtonData resetHiddenCommandPushButtonData = new PushButtonData(
+                 "resetHiddenCommandButton", //name of the button
+                 "Reset Hidden in View", //text on the button
                  FileLocations.AddInDirectory + FileLocations.AssemblyName + ".dll",
-                 "Viz.Commands.NewCommand");
-            newCommandPushButtonData.LargeImage = largeIcon;
+                 "DougKlassen.Revit.Viz.Commands.ResetHiddenCommand");
+            resetHiddenCommandPushButtonData.LargeImage = largeIcon;
+            resetHiddenCommandPushButtonData.ToolTip = "Unhide all elements hidden in the current view";
 
-            RibbonPanel newAddInRibbonPanel = application.CreateRibbonPanel("NewAddIn");
-            newAddInRibbonPanel.AddItem(newCommandPushButtonData);
+            PushButtonData resetGraphicsCommandPushButtonData = new PushButtonData(
+                "resetGraphicsCommandButton", //name of the button
+                "Reset Graphics in View", //text on the button
+                FileLocations.AddInDirectory + FileLocations.AssemblyName + ".dll",
+                "DougKlassen.Revit.Viz.Commands.ResetGraphicsCommand");
+            resetGraphicsCommandPushButtonData.LargeImage = largeIcon;
+            resetGraphicsCommandPushButtonData.ToolTip = "Reset all visibility graphics overrides in the current view";
+
+            String tabName = "Viz";
+            application.CreateRibbonTab(tabName);
+            RibbonPanel VizRibbonPanel = application.CreateRibbonPanel(tabName, "Viz");
+            VizRibbonPanel.AddItem(resetHiddenCommandPushButtonData);
+            VizRibbonPanel.AddItem(resetGraphicsCommandPushButtonData);
 
             return Result.Succeeded;
         }
