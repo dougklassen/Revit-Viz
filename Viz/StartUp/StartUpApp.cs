@@ -32,7 +32,7 @@ namespace DougKlassen.Revit.Viz
 
             PushButtonData resetHiddenCommandPushButtonData = new PushButtonData(
                  "resetHiddenCommandButton", //name of the button
-                 "Reset Hidden in View", //text on the button
+                 "Reset Hidden", //text on the button
                  FileLocations.AddInDirectory + FileLocations.AssemblyName + ".dll",
                  "DougKlassen.Revit.Viz.Commands.ResetHiddenCommand");
             resetHiddenCommandPushButtonData.LargeImage = largeIcon;
@@ -40,7 +40,7 @@ namespace DougKlassen.Revit.Viz
 
             PushButtonData resetGraphicsCommandPushButtonData = new PushButtonData(
                 "resetGraphicsCommandButton", //name of the button
-                "Reset Graphics in View", //text on the button
+                "Reset Graphics", //text on the button
                 FileLocations.AddInDirectory + FileLocations.AssemblyName + ".dll",
                 "DougKlassen.Revit.Viz.Commands.ResetGraphicsCommand");
             resetGraphicsCommandPushButtonData.LargeImage = largeIcon;
@@ -48,9 +48,9 @@ namespace DougKlassen.Revit.Viz
 
             String tabName = "Viz";
             application.CreateRibbonTab(tabName);
-            RibbonPanel VizRibbonPanel = application.CreateRibbonPanel(tabName, "Viz");
-            VizRibbonPanel.AddItem(resetHiddenCommandPushButtonData);
-            VizRibbonPanel.AddItem(resetGraphicsCommandPushButtonData);
+            RibbonPanel ResetRibbonPanel = application.CreateRibbonPanel(tabName, "Viz");
+            ResetRibbonPanel.AddItem(resetHiddenCommandPushButtonData);
+            ResetRibbonPanel.AddItem(resetGraphicsCommandPushButtonData);
 
             return Result.Succeeded;
         }

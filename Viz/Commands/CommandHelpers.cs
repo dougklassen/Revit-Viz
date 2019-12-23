@@ -10,14 +10,14 @@ namespace DougKlassen.Revit.Viz.Commands
 {
     public static class CommandHelpers
     {
-        public static IEnumerable<Element> GetAllModelElements(this Document dbDoc)
+        public static IEnumerable<Element> GetAllElements(this Document dbDoc)
         {
-            IEnumerable<Element> elements = new List<Element>();
+            IEnumerable<Element> allElements = new List<Element>();
 
             ElementFilter allElementsFilter = new LogicalOrFilter(new ElementIsElementTypeFilter(false), new ElementIsElementTypeFilter(true));
-            FilteredElementCollector allElements = new FilteredElementCollector(dbDoc).WherePasses(allElementsFilter);
+            allElements = new FilteredElementCollector(dbDoc).WherePasses(allElementsFilter);
 
-            return elements;
+            return allElements;
         }
     }
 }
