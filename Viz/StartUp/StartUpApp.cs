@@ -48,7 +48,7 @@ namespace DougKlassen.Revit.Viz
 
             String tabName = "Viz";
             application.CreateRibbonTab(tabName);
-            RibbonPanel ResetRibbonPanel = application.CreateRibbonPanel(tabName, "Viz");
+            RibbonPanel ResetRibbonPanel = application.CreateRibbonPanel(tabName, "Reset View Overrides");
             ResetRibbonPanel.AddItem(resetHiddenCommandPushButtonData);
             ResetRibbonPanel.AddItem(resetGraphicsCommandPushButtonData);
 

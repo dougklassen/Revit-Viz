@@ -12,6 +12,7 @@ namespace DougKlassen.Revit.Viz.Commands
     {
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
+            String ttl = "Viz-Reset Hidden";
             String msg = String.Empty;
             Document dbDoc = commandData.Application.ActiveUIDocument.Document;
             View currentView = commandData.Application.ActiveUIDocument.ActiveView;
@@ -33,7 +34,7 @@ namespace DougKlassen.Revit.Viz.Commands
             {
                 using (Transaction t = new Transaction(dbDoc))
                 {
-                    t.Start("Viz-Reset hidden");
+                    t.Start(ttl);
                     currentView.UnhideElements(elementIdsToUnhide);
                     msg += String.Format("{0} elements were unhidden in the current view\n", elementIdsToUnhide.Count);
                     t.Commit();
@@ -44,7 +45,7 @@ namespace DougKlassen.Revit.Viz.Commands
                 msg += "No hidden elements were found in the view\n";
             }
 
-            TaskDialog.Show("Elements Unhidden", msg);
+            TaskDialog.Show(ttl, msg);
             return Result.Succeeded;
         }
     }
