@@ -1,0 +1,1093 @@
+Name,Model,Class
+Adaptive Points,OST_AdaptivePoints,model
+Air Terminal Tags,OST_DuctTerminalTags,annotative
+Air Terminals,OST_DuctTerminal,model
+Analysis Display Style,OST_AnalysisDisplayStyle,other
+Analysis Results,OST_AnalysisResults,other
+Analytical Beam Tags,OST_BeamAnalyticalTags,annotative
+Analytical Beams,OST_BeamAnalytical,analytical
+Analytical Brace Tags,OST_BraceAnalyticalTags,annotative
+Analytical Braces,OST_BraceAnalytical,analytical
+Analytical Column Tags,OST_ColumnAnalyticalTags,annotative
+Analytical Columns,OST_ColumnAnalytical,analytical
+Analytical Floor Tags,OST_FloorAnalyticalTags,annotative
+Analytical Floors,OST_FloorAnalytical,analytical
+Analytical Foundation Slabs,OST_FoundationSlabAnalytical,analytical
+Analytical Isolated Foundation Tags,OST_IsolatedFoundationAnalyticalTags,annotative
+Analytical Isolated Foundations,OST_IsolatedFoundationAnalytical,analytical
+Analytical Links,OST_LinksAnalytical,analytical
+Analytical Link Tags,OST_LinkAnalyticalTags,annotative
+Analytical Node Tags,OST_NodeAnalyticalNodes,analytical
+Analytical Nodes,OST_AnalyticalNodes,analytical
+Analytical Slab Foundation Tags,OST_FoundationSlabAnalyticalTags,annotative
+Analytical Spaces,OST_AnalyticSpaces,analytical
+Analytical Surfaces,OST_AnalyticSurfaces,analytical
+Analytical Wall Foundation Tags,OST_WallFoundationAnalyticalTags,annotative
+Analytical Wall Foundations,OST_WallFoundationAnalytical,analytical
+Analytical Wall Tags,OST_WallAnalyticalTags,annotative
+Analytical Walls,OST_WallAnalytical,analytical
+Areas,OST_Areas,annotative
+Area Loads,OST_AreaLoads,analytical
+Area Tags,OST_AreaTags,annotative
+Assembly Tags,OST_AssemblyTags,annotative
+Assemblies,OST_Assemblies,model
+Boundary Conditions,OST_BoundaryConditions,analytical
+Brace in Plan View Symbols,OST_StructuralBracePlanReps,annotative
+Cable Tray Fitting Tags,OST_CableTrayTags,annotative
+Cable Tray Fittings,OST_CableTrayFitting,model
+Cable Tray Runs,OST_CableTrayRun,model
+Cable Tray Tags,OST_CableTrayTags,annotative
+Cable Trays,OST_CableTray,model
+Callout Boundary,OST_CalloutBoundary,annotative
+Callout Heads,OST_CalloutHeads,annotative
+Callouts,OST_Callouts,other
+Cameras,OST_Camera_Lines,other
+Casework Tags,OST_CaseworkTags,annotative
+Casework,OST_Casework,model
+Ceiling Tags,OST_CeilingTags,annotative
+Ceilings,OST_Ceilings,model
+Color Fill Legends,OST_ColorFillLegends,other
+Columns,OST_Columns,model
+Communication Device Tags,OST_CommunicationDeviceTags,annotative
+Communication Devices,OST_CommunicationDevices,model
+Conduit Fittings,OST_ConduitFitting,model
+Conduit Runs,OST_ConduitRun,model
+Conduits,OST_Conduit,model
+Conduit Tags,OST_ConduitTags,annotative
+Connection Symbols,OST_StructConnectionSymbols,annotative
+Contour Labels,OST_ContourLabels,annotative
+Curtain Grids,OST_CurtainGrids,model
+Curtain Panel Tags,OST_CurtainWallPanelTags,annotative
+Curtain Panels,OST_CurtainWallPanels,model
+Curtain System Tags,OST_CurtainSystemTags,annotative
+Curtain Systems,OST_CurtaSystem,model
+Curtain Wall Mullions,OST_CurtainWallMullions,model
+Data Devices,OST_DataDevices,model
+Data Device Tags,OST_DataDeviceTags,annotative
+Detail Items,OST_DetailComponents,annotative
+Dimensions,OST_Dimensions,annotative
+Displacement Path,OST_DisplacementPath,other
+Doors,OST_Doors,model
+Door Tags,OST_DoorTags,annotative
+Duct Accessories,OST_DuctAccessory,model
+Duct Accessory Tags,OST_DuctAccessoryTags,annotative
+Duct Color Fill,OST_DuctColorFills,other
+Duct Color Fill Legends,OST_DuctColorFillLegends,other
+Duct Fittings,OST_DuctFitting,model
+Duct Insulations,OST_DuctInsulations,model
+Duct Insulations Tags,OST_DuctInsulationsTags,annotative
+Duct Linings,OST_DuctLinings,model
+Duct Lining Tags,OST_DuctLiningsTags,annotative
+Duct Placeholders,OST_PlaceHolderDucts,other
+Duct Systems,OST_DuctSystem,other
+Ducts,OST_DuctCurves,model
+Duct Tags,OST_DuctTags,annotative
+Electrical Circuit Tags,OST_ElectricalCircuitTags,annotative
+Electrical Circuits,OST_ElectricalCircuit,other
+Electrical Equipment,OST_ElectricalEquipment,model
+Electrical Fixtures,OST_ElectricalFixtures,model
+Elevation Marks,OST_ElevationMarks,annotative
+Elevations,OST_Elev,view
+Entourage,OST_Entourage,model
+Fabrication Parts,OST_FabricationParts,other
+Fascias,OST_Fascia,model
+Filled region,OST_FilledRegion,annotative
+Fire Alarm Device Tags,OST_FireAlarmDeviceTags,annotative
+Fire Alarm Devices,OST_FireAlarmDevices,model
+Flex Ducts,OST_FlexDuctCurves,model
+Flex Duct Tags,OST_FlexDuctTags,annotative
+Flex Pipes,OST_FlexPipeCurves,model
+Flex Pipe Tags,OST_FlexPipeTags,annotative
+Floor Tags,OST_FloorTags,annotative
+Floors,OST_Floors,model
+Foundation Span Direction Symbol,OST_FootingSpanDirectionSymbol,annotative
+Furniture,OST_Furniture,model
+Furniture Tags,OST_FurnitureTags,annotative
+Furniture Systems,OST_FurnitureSystems,model
+Furniture System Tags,OST_FurnitureSystemTags,annotative
+Generic Annotations,OST_GenericAnnotation,annotative
+Generic Models,OST_GenericModel,model
+Grid Heads,OST_GridHeads,annotative
+Grids,OST_Grids,model
+Guide Grid,OST_GuideGrid,other
+Gutters,OST_Gutter,model
+HVAC Zones,OST_HVAC_Zones,other
+Imports in Families,OST_ImportObjectStyles,other
+Internal Line Load Tags,OST_InternalLineLoadTags,annotative
+Internal Area Load Tags,OST_InternalAreaLoadTags,annotative
+Internal Point Load Tags,OST_InternalPointLoadTags,annotative
+Keynote Tags,OST_KeynoteTags,annotative
+Landings,OST_StairsLandings,model
+Level Heads,OST_LevelHeads,annotative
+Levels,OST_Levels,other
+Lightning Device Tags,OST_LightningDeviceTags,annotative
+Lighting Devices,OST_LightingDevices,model
+Lighting Fixtures,OST_LightingFixtures,model
+Line Loads,OST_LineLoads,other
+Line Load Tags,OST_LineLoadTags,annotative
+Lines,OST_Lines,annotative
+Masking Region,OST_MaskingRegion,annotative
+Mass Tags,OST_MassTags,annotative
+Mass,OST_Mass,model
+Matchline,OST_Matchline,annotative
+Materials,OST_Materials,other
+Material Tags,OST_MaterialTags,annotative
+Mechanical Equipment Tags,OST_MechanicalEquipmentTags,annotative
+Mechanical Equipment,OST_MechanicalEquipment,model
+MEP Fabrication Containment Tags,OST_FabricationContainmentTags,annotative
+MEP Fabrication Containment,OST_FabricationContainment,other
+MEP Fabrication Ductwork Tags,OST_FabricationDuctworkTags,annotative
+MEP Fabrication Pipework,OST_FabricationPipework,model
+MEP Fabrication Pipework Tags,OST_FabricationPipeworkTags,annotative
+MEP Fabrication Hangers,OST_FabricationHangers,model
+MEP Fabrication Hanger Tags,OST_FabricationHangerTags,annotative
+Multi-Category Tags,OST_MultiCategoryTags,annotative
+Multi-Rebar Annotations,OST_MultiReferenceAnnotations,annotative
+Nurse Call Device Tags,OST_NurseCallDeviceTags,annotative
+Nurse Call Devices,OST_NurseCallDevices,model
+Panel Schedule Graphics,OST_PanelScheduleGraphics,other
+Parking Tags,OST_ParkingTags,annotative
+Parking,OST_Parking,model
+Parts,OST_Parts,model
+Part Tags,OST_PartTags,annotative
+Pipe Accessory Tags,OST_PipeAccessoryTags,annotative
+Pipe Accessories,OST_PipeAccessory,model
+Pipe Color Fill,OST_PipeColorFills,other
+Pipe Color Fill Legends,OST_PipeColorFillLegends,annotative
+Pipe Fitting Tags,OST_PipeFittingTags,annotative
+Pipe Fittings,OST_PipeFitting,model
+Pipe Insulations,OST_PipeInsulations,model
+Pipe Insulations Tags,OST_PipeInsulationsTags,annotative
+Pipe Placeholders,OST_PlaceHolderPipes,other
+Pipe Segments,OST_PipeSegments,model
+Pipe Tags,OST_PipeTags,annotative
+Pipes,OST_PipeCurves,other
+Piping Systems,OST_PipingSystem,other
+Plan Region,OST_PlanRegion,annotative
+Planting Tags,OST_PlantingTags,annotative
+Planting,OST_Planting,model
+Plumbing Fixture Tags,OST_PlumbingFictureTags,annotative
+Plumbing Fixtures,OST_PlumbingFixtures,model
+Point Clouds,OST_PointClouds,model
+Point Load Tags,OST_PointLoadTags,annotative
+Point Loads,OST_PointLoads,analytical
+Project Information,OST_ProjectInformation,other
+Property Line Segment Tags,OST_SitePropertyLineSegmentTags,annotative
+Property Line Segments,OST_SitePropertyLineSegment,model
+Railing Tags,OST_StairsRailingTags,annotative
+Railings,OST_StairsRailing,model
+Ramps,OST_Ramps,model
+Raster Images,OST_RasterImages,annotative
+Rebar Cover References,OST_RebarCover,other
+Rebar Set Toggle,OST_RebarSetToggle,other
+Rebar Shape,OST_RebarShape,model
+Reference Lines,OST_ReferenceLines,model
+Reference Planes,OST_CLines,other
+Reference Points,OST_ReferencePoints,model
+Render Regions,OST_RenderRegions,other
+Revision Cloud Tags,OST_RevisionCloudTags,annotative
+Revision Clouds,OST_RevisionClouds,annotative
+Roads,OST_Roads,model
+Roof Soffits,OST_RoofSoffit,model
+Roofs,OST_Roofs,model
+Roof Tags,OST_RoofTags,annotative
+Rooms,OST_Rooms,other
+Routing Preferences,OST_RoutingPreferences,other
+Runs,OST_StairsRuns,model
+Schedule Graphics,OST_ScheduleGraphics,other
+Scope Boxes,OST_VolumeOfInterest,other
+Section Boxes,OST_SectionBox,model
+Section Line,OST_SectionLine,annotative
+Section Marks,OST_SectionHeads,annotative
+Sections,OST_Sections,view
+Security Device Tags,OST_SecurityDeviceTags,annotative
+Security Devices,OST_SecurityDevices,model
+Shaft Openings,OST_ShaftOpening,annotative
+Sheets,OST_Sheets,other
+Site,OST_Site,model
+Site Tags,OST_SiteTags,annotative
+Space Tags,OST_MEPSpaceTags,annotative
+Spaces,OST_MEPSpaces,other
+Span Direction Symbol,OST_SpanDirectionSymbol,annotative
+Specialty Equipment Tags,OST_SpecialityEquipmentTags,annotative
+Specialty Equipment,OST_SpecialityEquipment,model
+Spot Coordinates,OST_SpotCoordinates,annotative
+Spot Elevation Symbols,OST_SpotElevSymbols,annotative
+Spot Elevations,OST_SpotElevations,annotative
+Spot Slopes,OST_SpotSlopes,annotative
+Sprinkler Tags,OST_SprinklerTags,annotative
+Sprinklers,OST_Sprinklers,model
+Stair Paths,OST_StairsPaths,annotative
+Stair Tread/Riser Numbers,OST_StairsTriserNumbers,annotative
+Stairs,OST_Stairs,model
+Stairs Landing Tags,OST_StairsLandingTags,annotative
+Stairs Support Tags,OST_StairsSupportTags,annotative
+Stair Tags,OST_StairsTags,annotative
+Stairs Run Tags,OST_StairsRunTags,annotative
+Structural Annotations,OST_StructuralAnnotations,annotative
+Structural Area Reinforcement,OST_AreaRein,model
+Structural Area Reinforcement Tags,OST_AreaReinTags,annotative
+Structural Area Reinforcement Symbols,OST_AreaReinSpanSymbol,annotative
+Structural Beam Systems,OST_StructuralFramingSystem,model
+Structural Beam System Tags,OST_BeamSystemTags,annotative
+Structural Columns,OST_StructuralColumns,model
+Structural Connection Handlers,OST_StructuralConnectionHandler,other
+Structural Connection Tags,OST_StructConnectionTags,annotative
+Structural Connections,OST_StructConnections,model
+Structural Fabric Areas,OST_FabricAreas,model
+Structural Fabric Reinforcement,OST_FabricReinforcement,model
+Structural Fabric Reinforcement Symbols,OST_FabricReinSpanSymbol,annotative
+Structural Fabric Reinforcement Tags,OST_FabricReinforcementTags,annotative
+Structural Foundations,OST_StructuralFoundation,model
+Structural Framing Tags,OST_StructuralFramingTags,annotative
+Structural Framing,OST_StructuralFraming,model
+Structural Internal Loads,OST_InternalLoads,analytical
+Structural Load Cases,OST_LoadCases,other
+Structural Loads,OST_Loads,analytical
+Structural Path Reinforcement,OST_PathRein,model
+Structural Path Reinforcement Symbols,OST_PathReinSpanSymbol,annotative
+Structural Path Reinforcement Tags,OST_PathReinTags,annotative
+Structural Rebar Tags,OST_RebarTags,annotative
+Structural Rebar,OST_Rebar,model
+Structural Rebar Coupler Tags,OST_CouplerTags,annotative
+Structural Stiffener Tags,OST_StructuralStiffenerTags,annotative
+Structural Stiffeners,OST_StructuralStiffener,model
+Structural Truss Tags,OST_TrussTags,annotative
+Structural Trusses,OST_StructuralTruss,model
+Supports,OST_StairsSupports,model
+Switch System,OST_SwitchSystem,other
+Telephone Device Tags,OST_TelephoneDeviceTags,annotative
+Telephone Devices,OST_TelephoneDevices,model
+Text Notes,OST_TextNotes,annotative
+Title Blocks,OST_TitleBlocks,annotative
+Topography,OST_Topography,model
+View Reference,OST_ReferenceViewerSymbol,view
+View Titles,OST_ViewportLabel,annotative
+Viewports,OST_Viewports,other
+Views,OST_Views,other
+Walls,OST_Walls,model
+Window Tags,OST_WindowTags,annotative
+Windows,OST_Windows,model
+Wire Tags,OST_WireTags,annotative
+Wires,OST_Wire,model
+Zone Tags,OST_ZoneTags,annotative
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
