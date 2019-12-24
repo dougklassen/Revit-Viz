@@ -30,6 +30,12 @@ namespace DougKlassen.Revit.Viz
             BitmapImage largeIcon = GetEmbeddedImageResource("iconLarge.png");
             BitmapImage smallIcon = GetEmbeddedImageResource("iconSmall.png");
 
+            String tabName = "Viz";
+            application.CreateRibbonTab(tabName);
+
+            #region Reset Panel
+            RibbonPanel ResetRibbonPanel = application.CreateRibbonPanel(tabName, "Reset View Overrides");
+
             PushButtonData resetHiddenCommandPushButtonData = new PushButtonData(
                  "resetHiddenCommandButton", //name of the button
                  "Reset Hidden", //text on the button
@@ -46,11 +52,24 @@ namespace DougKlassen.Revit.Viz
             resetGraphicsCommandPushButtonData.LargeImage = largeIcon;
             resetGraphicsCommandPushButtonData.ToolTip = "Reset all visibility graphics overrides in the current view";
 
-            String tabName = "Viz";
-            application.CreateRibbonTab(tabName);
-            RibbonPanel ResetRibbonPanel = application.CreateRibbonPanel(tabName, "Reset View Overrides");
             ResetRibbonPanel.AddItem(resetHiddenCommandPushButtonData);
             ResetRibbonPanel.AddItem(resetGraphicsCommandPushButtonData);
+            #endregion Reset Panel
+
+            #region Apply Styles Panel
+            RibbonPanel ApplyStylesPanel = application.CreateRibbonPanel(tabName, "Apply Override Styles");
+
+            PushButtonData pickupStyleCommandPushButtonData = new PushButtonData(
+                 "pickupStyleCommandButton", //name of the button
+                 "Style Eyedropper", //text on the button
+                 FileLocations.AddInDirectory + FileLocations.AssemblyName + ".dll",
+                 "DougKlassen.Revit.Viz.Commands.PickupStyleCommand");
+            pickupStyleCommandPushButtonData.LargeImage = largeIcon;
+            pickupStyleCommandPushButtonData.ToolTip = "Unhide all elements hidden in the current view";
+            pickupStyleCommandPushButtonData.AvailabilityClassName = "DougKlassen.Revit.Viz.PickupStyleCommandAvailability";
+
+            ApplyStylesPanel.AddItem(pickupStyleCommandPushButtonData);
+            #endregion Apply Styles Panel
 
             return Result.Succeeded;
         }
@@ -78,4 +97,14 @@ namespace DougKlassen.Revit.Viz
             return bmp;
         }
     }
+
+    #region Command Availability
+    public class PickupStyleCommandAvailability : IExternalCommandAvailability
+    {
+        public bool IsCommandAvailable(UIApplication applicationData, CategorySet selectedCategories)
+        {
+            return applicationData.ActiveUIDocument.ActiveView.AreGraphicsOverridesAllowed();
+        }
+    }
+    #endregion Command Availability
 }

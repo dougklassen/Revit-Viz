@@ -18,7 +18,7 @@ namespace DougKlassen.Revit.Viz.Commands
             View currentView = commandData.Application.ActiveUIDocument.ActiveView;
             msg += "Current view: " + currentView.Name + '\n';
 
-            List<Element> elementsToCheck = CommandHelpers.GetAllElements(dbDoc).ToList();
+            List<Element> elementsToCheck = Helpers.GetAllElements(dbDoc).ToList();
             msg += "All element count: " + elementsToCheck.Count + '\n';
             List<ElementId> elementIdsToUnhide = new List<ElementId>();
 

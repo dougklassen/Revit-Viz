@@ -24,7 +24,7 @@ namespace DougKlassen.Revit.Viz.Commands
                 return Result.Failed;
             }
 
-            List<Element> elementsToCheck = CommandHelpers.GetAllElements(dbDoc).ToList();
+            List<Element> elementsToCheck = Helpers.GetAllElements(dbDoc).ToList();
             msg += "All element count: " + elementsToCheck.Count + '\n';
 
             foreach (Element e in elementsToCheck)
