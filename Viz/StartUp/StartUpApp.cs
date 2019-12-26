@@ -65,10 +65,19 @@ namespace DougKlassen.Revit.Viz
                  FileLocations.AddInDirectory + FileLocations.AssemblyName + ".dll",
                  "DougKlassen.Revit.Viz.Commands.PickupStyleCommand");
             pickupStyleCommandPushButtonData.LargeImage = largeIcon;
-            pickupStyleCommandPushButtonData.ToolTip = "Unhide all elements hidden in the current view";
-            pickupStyleCommandPushButtonData.AvailabilityClassName = "DougKlassen.Revit.Viz.PickupStyleCommandAvailability";
-
+            pickupStyleCommandPushButtonData.ToolTip = "Choose an override style to apply to other elements";
+            pickupStyleCommandPushButtonData.AvailabilityClassName = "DougKlassen.Revit.Viz.OverrideableViewCommandAvailability";
             ApplyStylesPanel.AddItem(pickupStyleCommandPushButtonData);
+
+            PushButtonData applyStyleCommandPushButtonData = new PushButtonData(
+                 "applyStyleCommandButton", //name of the button
+                 "Apply Style", //text on the button
+                 FileLocations.AddInDirectory + FileLocations.AssemblyName + ".dll",
+                 "DougKlassen.Revit.Viz.Commands.ApplyStyleCommand");
+            applyStyleCommandPushButtonData.LargeImage = largeIcon;
+            applyStyleCommandPushButtonData.ToolTip = "Apply an override style to selected elements";
+            applyStyleCommandPushButtonData.AvailabilityClassName = "DougKlassen.Revit.Viz.OverrideableViewCommandAvailability";
+            ApplyStylesPanel.AddItem(applyStyleCommandPushButtonData);
             #endregion Apply Styles Panel
 
             return Result.Succeeded;
@@ -99,7 +108,7 @@ namespace DougKlassen.Revit.Viz
     }
 
     #region Command Availability
-    public class PickupStyleCommandAvailability : IExternalCommandAvailability
+    public class OverrideableViewCommandAvailability : IExternalCommandAvailability
     {
         public bool IsCommandAvailable(UIApplication applicationData, CategorySet selectedCategories)
         {

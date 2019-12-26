@@ -16,22 +16,23 @@ namespace DougKlassen.Revit.Viz
 
         public VizSettings LoadSettings()
         {
+            VizSettings settings;
+
             if (!File.Exists(configFilePath))
             {
                 WriteSettings(new VizSettings());
+                throw new Exception("No config file found");
             }
 
             try
             {
                 String jsonText = File.ReadAllText(configFilePath);
-                JsonConvert.DeserializeObject<VizSettings>(jsonText);
+                settings = JsonConvert.DeserializeObject<VizSettings>(jsonText);
             }
             catch (Exception e)
             {
                 throw new Exception("Couldn't read config file", e);
             }
-
-            VizSettings settings = new VizSettings();
 
             return settings;
         }

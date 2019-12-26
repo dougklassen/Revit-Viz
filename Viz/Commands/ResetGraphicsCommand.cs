@@ -31,7 +31,7 @@ namespace DougKlassen.Revit.Viz.Commands
             {
                 using (Transaction t = new Transaction(dbDoc))
                 {
-                    t.Start(ttl);
+                    t.Start("Viz-" + ttl);
                     currentView.SetElementOverrides(e.Id, new OverrideGraphicSettings());
                     t.Commit();
                 }

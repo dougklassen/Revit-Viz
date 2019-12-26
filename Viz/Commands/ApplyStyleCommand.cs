@@ -1,0 +1,70 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using Autodesk.Revit.DB;
+using Autodesk.Revit.UI;
+using Autodesk.Revit.UI.Selection;
+
+namespace DougKlassen.Revit.Viz.Commands
+{
+    [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
+    class ApplyStyleCommand : IExternalCommand
+    {
+        public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
+        {
+            String ttl = "Apply Style";
+            String msg = String.Empty;
+            IVizSettingsRepo repo = new VizSettingsJsonRepo();
+            VizSettings vizSettings = repo.LoadSettings();
+
+            UIDocument uiDoc = commandData.Application.ActiveUIDocument;
+            Document dbDoc = commandData.Application.ActiveUIDocument.Document;
+            View currentView = commandData.Application.ActiveUIDocument.ActiveView;
+            IEnumerable<ElementId> selectedElementIds;
+
+            if (uiDoc.Selection.GetElementIds().Count == 0)
+            {
+                TaskDialog.Show("Apply Styles", "You must select elements to apply styles to");
+                return Result.Failed;
+            }
+            else
+            {
+                selectedElementIds = uiDoc.Selection.GetElementIds();
+            }
+
+            if (vizSettings.CurrentOverrideStyle != null)
+            {
+                msg += String.Format(
+                    "Halftone: {0}\n" +
+                    "ProjectionLinePatternId: {1}\n" +
+                    "ProjectionLineColor: {2}\n" +
+                    "ProjectionLineWeight: {3}\n",
+                    vizSettings.CurrentOverrideStyle.Halftone,
+                    vizSettings.CurrentOverrideStyle.ProjectionLinePatternId,
+                    vizSettings.CurrentOverrideStyle.ProjectionLineColor,
+                    vizSettings.CurrentOverrideStyle.ProjectionLineWeight);
+            }
+            else
+            {
+                msg += "CurrentOverrideStyle is null";
+            }
+            TaskDialog.Show(ttl, msg);
+
+            OverrideGraphicSettings settingsToApply = vizSettings.CurrentOverrideStyle.GetOverride();
+            using (Transaction t = new Transaction(dbDoc))
+            {
+                t.Start("Viz-" + ttl);
+                foreach (ElementId id in selectedElementIds)
+                {
+                    currentView.SetElementOverrides(id, settingsToApply);
+                }
+                t.Commit();
+            }
+
+            return Result.Succeeded;
+        }
+    }
+}

@@ -10,12 +10,12 @@ namespace DougKlassen.Revit.Viz
 {
     public class VizSettings
     {
-        public IEnumerable<BuiltInCategory> ModelCategories;
-        public IEnumerable<BuiltInCategory> AnnotationCategories;
-        public IEnumerable<BuiltInCategory> ViewBugCategories;
-        public IEnumerable<BuiltInCategory> AnalyticalCategories;
+        public IEnumerable<BuiltInCategory> ModelCategories { get; set; }
+        public IEnumerable<BuiltInCategory> AnnotationCategories { get; set; }
+        public IEnumerable<BuiltInCategory> ViewBugCategories { get; set; }
+        public IEnumerable<BuiltInCategory> AnalyticalCategories { get; set; }
 
-        public VizOverrides CurrentOverrideStyle;
+        public VizOverrides CurrentOverrideStyle { get; set; }
 
         public VizSettings()
         {
