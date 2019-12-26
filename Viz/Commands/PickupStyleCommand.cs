@@ -16,7 +16,6 @@ namespace DougKlassen.Revit.Viz.Commands
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
             String ttl = "Style Eyedropper";
-            String msg = String.Empty;
             IVizSettingsRepo repo = new VizSettingsJsonRepo();
             VizSettings vizSettings = repo.LoadSettings();
 
@@ -41,12 +40,10 @@ namespace DougKlassen.Revit.Viz.Commands
                 }
             }
             OverrideGraphicSettings selectedOverrides = currentView.GetElementOverrides(sourceElementId);
-            msg += selectedOverrides.GetVizDescription();
 
             vizSettings.CurrentOverrideStyle = selectedOverrides.GetVizModel();
             repo.WriteSettings(vizSettings);
 
-            TaskDialog.Show(ttl, msg);
             return Result.Succeeded;
         }
     }

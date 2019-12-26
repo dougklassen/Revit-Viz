@@ -16,7 +16,6 @@ namespace DougKlassen.Revit.Viz.Commands
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
             String ttl = "Apply Style";
-            String msg = String.Empty;
             IVizSettingsRepo repo = new VizSettingsJsonRepo();
             VizSettings vizSettings = repo.LoadSettings();
 
@@ -34,24 +33,6 @@ namespace DougKlassen.Revit.Viz.Commands
             {
                 selectedElementIds = uiDoc.Selection.GetElementIds();
             }
-
-            if (vizSettings.CurrentOverrideStyle != null)
-            {
-                msg += String.Format(
-                    "Halftone: {0}\n" +
-                    "ProjectionLinePatternId: {1}\n" +
-                    "ProjectionLineColor: {2}\n" +
-                    "ProjectionLineWeight: {3}\n",
-                    vizSettings.CurrentOverrideStyle.Halftone,
-                    vizSettings.CurrentOverrideStyle.ProjectionLinePatternId,
-                    vizSettings.CurrentOverrideStyle.ProjectionLineColor,
-                    vizSettings.CurrentOverrideStyle.ProjectionLineWeight);
-            }
-            else
-            {
-                msg += "CurrentOverrideStyle is null";
-            }
-            TaskDialog.Show(ttl, msg);
 
             OverrideGraphicSettings settingsToApply = vizSettings.CurrentOverrideStyle.GetOverride();
             using (Transaction t = new Transaction(dbDoc))

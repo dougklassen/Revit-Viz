@@ -21,7 +21,6 @@ namespace DougKlassen.Revit.Viz
             if (!File.Exists(configFilePath))
             {
                 WriteSettings(new VizSettings());
-                throw new Exception("No config file found");
             }
 
             try
