@@ -30,7 +30,7 @@ namespace DougKlassen.Revit.Viz
             BitmapImage largeIcon = GetEmbeddedImageResource("iconLarge.png");
             BitmapImage smallIcon = GetEmbeddedImageResource("iconSmall.png");
 
-            String tabName = "Viz";
+            String tabName = "DK";
             application.CreateRibbonTab(tabName);
 
             #region Reset Panel
@@ -79,6 +79,21 @@ namespace DougKlassen.Revit.Viz
             applyStyleCommandPushButtonData.AvailabilityClassName = "DougKlassen.Revit.Viz.OverrideableViewCommandAvailability";
             ApplyStylesPanel.AddItem(applyStyleCommandPushButtonData);
             #endregion Apply Styles Panel
+
+            #region Manage Callouts Panel
+            RibbonPanel ManageCalloutsPanel = application.CreateRibbonPanel(tabName, "Manage View Callouts");
+
+            PushButtonData filterBugsCommandPushButtonData = new PushButtonData(
+                 "filterBugsCommandButton", //name of the button
+                 "Filter View Callouts", //text on the button
+                 FileLocations.AddInDirectory + FileLocations.AssemblyName + ".dll",
+                 "DougKlassen.Revit.Viz.Commands.FilterBugsCommand");
+            filterBugsCommandPushButtonData.LargeImage = largeIcon;
+            filterBugsCommandPushButtonData.ToolTip = "Filter Callouts for the current view";
+            filterBugsCommandPushButtonData.AvailabilityClassName = "DougKlassen.Revit.Viz.OverrideableViewCommandAvailability";
+            ManageCalloutsPanel.AddItem(filterBugsCommandPushButtonData);
+
+            #endregion Manage Callouts Panel
 
             return Result.Succeeded;
         }
