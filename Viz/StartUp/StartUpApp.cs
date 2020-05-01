@@ -31,7 +31,14 @@ namespace DougKlassen.Revit.Viz
             BitmapImage smallIcon = GetEmbeddedImageResource("iconSmall.png");
 
             String tabName = "DK";
-            application.CreateRibbonTab(tabName);
+            try //an exception will be thrown if the tab already exists
+            {
+                application.CreateRibbonTab(tabName);
+            }
+            catch (Autodesk.Revit.Exceptions.ArgumentException e)
+            {
+                //ignore
+            }
 
             #region Reset Panel
             RibbonPanel ResetRibbonPanel = application.CreateRibbonPanel(tabName, "Reset View Overrides");
